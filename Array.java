@@ -23,7 +23,7 @@ num[i]=num[j];
 num[j]=t;
 t=bc[i];
 bc[i]=bc[j];
-bc[j]=temp;
+bc[j]=t;
 }
 }
 }
@@ -41,5 +41,6 @@ bc[j]=t;
 }
 for(i=0;i<n;i++){
 System.out.println(num[i]);
+}
 }
 }
