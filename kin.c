@@ -1,21 +1,21 @@
 #include<stdio.h>
 int main()
 {
-int n,p,i,j,count=1;
-static int c=1;
-printf("Enter the number of students:");
+int n,p,i,j,cnt=1;
+int c=1;
+printf("students:");
 scanf("%d",&n);
 p=n/2;
-printf("The number of Pairs:%d",p);
+printf("No. of pairs:%d",p);
 int a[n];
 for(i=1;i<=n-1;i++)
 {
     for(j=1;j<2;j++)
     {
-        if(count<=n)
+        if(cnt<=n)
         {
-         a[i][j]=count;
-         count++;
+         a[i][j]=cnt;
+         cnt++;
         }
         else
         {
@@ -28,7 +28,7 @@ for(i=1;i<=n-1;i++)
 {
     for(j=1;j<2;j++)
     {
-        printf("The Students in pairs will b:%d",a[i][j]);
+        printf("Students in pairs will be:%d",a[i][j]);
     }
 }
 return 0;
